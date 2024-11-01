@@ -13,6 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     let loginViewController = LoginViewController()
     let onboardingContainerViewController = OnboardingContainerViewController()
+    let dummyViewController = DummyViewController()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
@@ -21,22 +22,50 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         loginViewController.delegate = self
         onboardingContainerViewController.delegate = self
+        dummyViewController.delegate = self
         
-        window?.rootViewController = onboardingContainerViewController
+        window?.rootViewController = loginViewController
         
         return true
     }
 }
 
+extension AppDelegate {
+    func setRootViewController(_ vc: UIViewController, animated: Bool = true) {
+        guard animated, let window = self.window else {
+            self.window?.rootViewController = vc
+            self.window?.makeKeyAndVisible()
+            return
+        }
+        
+        window.rootViewController = vc
+        window.makeKeyAndVisible()
+        UIView.transition(with: window, duration: 0.4, options: .transitionCrossDissolve, animations: nil, completion: nil)
+    }
+}
+
+// MARK: Actions
 extension AppDelegate: LoginViewControllerDelegate {
     func didLogin() {
-        print("Did login")
-        window?.rootViewController = OnboardingContainerViewController()
+        if LocalState.hasOnboading {
+            setRootViewController(dummyViewController)
+        } else {
+            setRootViewController(onboardingContainerViewController)
+        }
+        
     }
 }
 
 extension AppDelegate: OnboardingContainerViewControllerDelegate {
     func didFinishOnboarding() {
-        print("onboarding finish")
+        setRootViewController(dummyViewController)
     }
 }
+
+extension AppDelegate: DummyViewControllerDelegate {
+    func didLogout() {
+        setRootViewController(loginViewController)
+    }
+}
+
+
