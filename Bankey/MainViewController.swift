@@ -28,7 +28,7 @@ class MainViewController: UITabBarController {
         let moneyNC = UINavigationController(rootViewController: moneyVC)
         let moreNC = UINavigationController(rootViewController: moreVC)
         
-        summaryNC.navigationBar.barTintColor = appColor
+        summaryNC.navigationBar.barTintColor = appColor // Is this necessary???
         hideNavigationBarLine(summaryNC.navigationBar)
         
         let tabBarList =  [summaryNC, moneyNC, moreNC]
@@ -46,12 +46,6 @@ class MainViewController: UITabBarController {
     private func setupTabBar() {
         tabBar.tintColor = appColor
         tabBar.isTranslucent = false
-    }
-}
-
-class AccountSummaryViewController: UIViewController {
-    override func viewDidLoad() {
-        view.backgroundColor = .systemGreen
     }
 }
 

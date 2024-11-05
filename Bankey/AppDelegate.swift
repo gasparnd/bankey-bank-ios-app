@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         onboardingContainerViewController.delegate = self
         dummyViewController.delegate = self
         
-        window?.rootViewController = mainVC
+        window?.rootViewController = AccountSummaryViewController()
         
         return true
     }
