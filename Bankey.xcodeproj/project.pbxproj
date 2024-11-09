@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EBB8DA1A2CDD79B8007BB296 /* AccountSummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBB8DA192CDD79B8007BB296 /* AccountSummaryHeaderView.xib */; };
 		EBD696302CCEEB5000F4FFD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6962F2CCEEB5000F4FFD1 /* AppDelegate.swift */; };
 		EBD696342CCEEB5000F4FFD1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD696332CCEEB5000F4FFD1 /* LoginViewController.swift */; };
 		EBD696392CCEEB5200F4FFD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD696382CCEEB5200F4FFD1 /* Assets.xcassets */; };
@@ -20,10 +21,10 @@
 		EBD696542CD574D000F4FFD1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD696532CD574D000F4FFD1 /* MainViewController.swift */; };
 		EBD6969A2CDA1C9000F4FFD1 /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD696992CDA1C9000F4FFD1 /* AccountSummaryViewController.swift */; };
 		EBD6969C2CDA222B00F4FFD1 /* AccountSummaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6969B2CDA222B00F4FFD1 /* AccountSummaryHeaderView.swift */; };
-		EBD6969E2CDA22B400F4FFD1 /* AccountSummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD6969D2CDA22B400F4FFD1 /* AccountSummaryHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EBB8DA192CDD79B8007BB296 /* AccountSummaryHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AccountSummaryHeaderView.xib; path = "../../../ios-professional-course/Bankey/6-Account-Summary-Header/Bankey/AccountSummary/AccountSummaryHeaderView.xib"; sourceTree = "<group>"; };
 		EBD6962C2CCEEB5000F4FFD1 /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD6962F2CCEEB5000F4FFD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBD696332CCEEB5000F4FFD1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -39,7 +40,6 @@
 		EBD696532CD574D000F4FFD1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EBD696992CDA1C9000F4FFD1 /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
 		EBD6969B2CDA222B00F4FFD1 /* AccountSummaryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryHeaderView.swift; sourceTree = "<group>"; };
-		EBD6969D2CDA22B400F4FFD1 /* AccountSummaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountSummaryHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +126,7 @@
 			children = (
 				EBD696992CDA1C9000F4FFD1 /* AccountSummaryViewController.swift */,
 				EBD6969B2CDA222B00F4FFD1 /* AccountSummaryHeaderView.swift */,
-				EBD6969D2CDA22B400F4FFD1 /* AccountSummaryHeaderView.xib */,
+				EBB8DA192CDD79B8007BB296 /* AccountSummaryHeaderView.xib */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -189,7 +189,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBD6969E2CDA22B400F4FFD1 /* AccountSummaryHeaderView.xib in Resources */,
+				EBB8DA1A2CDD79B8007BB296 /* AccountSummaryHeaderView.xib in Resources */,
 				EBD6963C2CCEEB5200F4FFD1 /* LaunchScreen.storyboard in Resources */,
 				EBD696392CCEEB5200F4FFD1 /* Assets.xcassets in Resources */,
 			);
