@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		EB236F952CE4156B00E56DF2 /* AccountSummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB236F942CE4156B00E56DF2 /* AccountSummaryHeaderView.xib */; };
+		EB236F972CF7E47700E56DF2 /* DecimalUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB236F962CF7E47700E56DF2 /* DecimalUtils.swift */; };
+		EB236F992CF7E4D300E56DF2 /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB236F982CF7E4D300E56DF2 /* CurrencyFormatter.swift */; };
 		EB70A1D92CE179E000A9C3A2 /* AccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70A1D82CE179E000A9C3A2 /* AccountSummaryCell.swift */; };
 		EBD696302CCEEB5000F4FFD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6962F2CCEEB5000F4FFD1 /* AppDelegate.swift */; };
 		EBD696342CCEEB5000F4FFD1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD696332CCEEB5000F4FFD1 /* LoginViewController.swift */; };
@@ -26,6 +28,8 @@
 
 /* Begin PBXFileReference section */
 		EB236F942CE4156B00E56DF2 /* AccountSummaryHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountSummaryHeaderView.xib; sourceTree = "<group>"; };
+		EB236F962CF7E47700E56DF2 /* DecimalUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalUtils.swift; sourceTree = "<group>"; };
+		EB236F982CF7E4D300E56DF2 /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
 		EB70A1D72CE179A800A9C3A2 /* AccountSummaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AccountSummaryHeaderView.xib; path = "../../../../ios-professional-course/Bankey/6-Account-Summary-Header/Bankey/AccountSummary/AccountSummaryHeaderView.xib"; sourceTree = "<group>"; };
 		EB70A1D82CE179E000A9C3A2 /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
 		EBD6962C2CCEEB5000F4FFD1 /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +142,8 @@
 			children = (
 				EBD6964F2CD55DD500F4FFD1 /* LocalState.swift */,
 				EBD696512CD5723F00F4FFD1 /* UIViewController+Utils.swift */,
+				EB236F962CF7E47700E56DF2 /* DecimalUtils.swift */,
+				EB236F982CF7E4D300E56DF2 /* CurrencyFormatter.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -228,6 +234,8 @@
 				EBD696502CD55DD500F4FFD1 /* LocalState.swift in Sources */,
 				EBD6969C2CDA222B00F4FFD1 /* AccountSummaryHeaderView.swift in Sources */,
 				EBD6964D2CD5534300F4FFD1 /* DummyViewController.swift in Sources */,
+				EB236F992CF7E4D300E56DF2 /* CurrencyFormatter.swift in Sources */,
+				EB236F972CF7E47700E56DF2 /* DecimalUtils.swift in Sources */,
 				EBD696342CCEEB5000F4FFD1 /* LoginViewController.swift in Sources */,
 				EB70A1D92CE179E000A9C3A2 /* AccountSummaryCell.swift in Sources */,
 				EBD6964B2CD435FE00F4FFD1 /* OnboardingViewController.swift in Sources */,

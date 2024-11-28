@@ -62,7 +62,6 @@ extension AccountSummaryViewController: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: AccountSummaryCell.reuseID, for: indexPath) as! AccountSummaryCell
         let account = accounts[indexPath.row]
-        print(account)
         cell.configure(with: account)
         
         return cell
@@ -81,12 +80,18 @@ extension AccountSummaryViewController: UITableViewDelegate {
 
 extension AccountSummaryViewController {
     private func fetchData() {
-        let saving = AccountSummaryCell.ViewModel(accountType: .Banking, accountName: "Basic Saving")
-        let visa = AccountSummaryCell.ViewModel(accountType: .CreditCard, accountName: "Visa Avion Card")
-        let investment = AccountSummaryCell.ViewModel(accountType: .Invesment, accountName: "Tax-Free Saver")
+        let saving = AccountSummaryCell.ViewModel(accountType: .Banking, accountName: "Basic Saving", balance: 929466.23)
+        let chequing = AccountSummaryCell.ViewModel(accountType: .Banking, accountName: "No-Fee All-In", balance: 17562.44)
+        let visa = AccountSummaryCell.ViewModel(accountType: .CreditCard, accountName: "Visa Avion Card", balance: 412.83)
+        let masterCard = AccountSummaryCell.ViewModel(accountType: .CreditCard, accountName: "Student mastercard", balance: 50.83)
+        let investment1 = AccountSummaryCell.ViewModel(accountType: .Invesment, accountName: "Tax-Free Saver", balance: 2000.00)
+        let investment2 = AccountSummaryCell.ViewModel(accountType: .Invesment, accountName: "Growth Fund", balance: 15000.00)
         
         accounts.append(saving)
+        accounts.append(chequing)
         accounts.append(visa)
-        accounts.append(investment)
+        accounts.append(masterCard)
+        accounts.append(investment1)
+        accounts.append(investment2)
     }
 }
