@@ -11,6 +11,8 @@
 		EB236F972CF7E47700E56DF2 /* DecimalUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB236F962CF7E47700E56DF2 /* DecimalUtils.swift */; };
 		EB236F992CF7E4D300E56DF2 /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB236F982CF7E4D300E56DF2 /* CurrencyFormatter.swift */; };
 		EB70A1D92CE179E000A9C3A2 /* AccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70A1D82CE179E000A9C3A2 /* AccountSummaryCell.swift */; };
+		EBB2A4892D22D2B700806633 /* Date+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB2A4882D22D2B700806633 /* Date+Utils.swift */; };
+		EBB2A48B2D22D4A800806633 /* AccountSummaryViewController+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB2A48A2D22D4A800806633 /* AccountSummaryViewController+Networking.swift */; };
 		EBD696302CCEEB5000F4FFD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6962F2CCEEB5000F4FFD1 /* AppDelegate.swift */; };
 		EBD696342CCEEB5000F4FFD1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD696332CCEEB5000F4FFD1 /* LoginViewController.swift */; };
 		EBD696392CCEEB5200F4FFD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD696382CCEEB5200F4FFD1 /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 		EB70A1D72CE179A800A9C3A2 /* AccountSummaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AccountSummaryHeaderView.xib; path = "../../../../ios-professional-course/Bankey/6-Account-Summary-Header/Bankey/AccountSummary/AccountSummaryHeaderView.xib"; sourceTree = "<group>"; };
 		EB70A1D82CE179E000A9C3A2 /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
 		EBB2A47D2D20710E00806633 /* BankeyUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankeyUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB2A4882D22D2B700806633 /* Date+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utils.swift"; sourceTree = "<group>"; };
+		EBB2A48A2D22D4A800806633 /* AccountSummaryViewController+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+Networking.swift"; sourceTree = "<group>"; };
 		EBD6962C2CCEEB5000F4FFD1 /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD6962F2CCEEB5000F4FFD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBD696332CCEEB5000F4FFD1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 		EBD6964E2CD55DB900F4FFD1 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				EBB2A4882D22D2B700806633 /* Date+Utils.swift */,
 				EBD6964F2CD55DD500F4FFD1 /* LocalState.swift */,
 				EBD696512CD5723F00F4FFD1 /* UIViewController+Utils.swift */,
 				EB236F962CF7E47700E56DF2 /* DecimalUtils.swift */,
@@ -178,6 +183,7 @@
 				EB70A1D62CE1798B00A9C3A2 /* Cells */,
 				EB70A1D42CE1796A00A9C3A2 /* Header */,
 				EBD696992CDA1C9000F4FFD1 /* AccountSummaryViewController.swift */,
+				EBB2A48A2D22D4A800806633 /* AccountSummaryViewController+Networking.swift */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -306,9 +312,11 @@
 				EBD696342CCEEB5000F4FFD1 /* LoginViewController.swift in Sources */,
 				EB70A1D92CE179E000A9C3A2 /* AccountSummaryCell.swift in Sources */,
 				EBD6964B2CD435FE00F4FFD1 /* OnboardingViewController.swift in Sources */,
+				EBB2A4892D22D2B700806633 /* Date+Utils.swift in Sources */,
 				EBD696542CD574D000F4FFD1 /* MainViewController.swift in Sources */,
 				EBD6969A2CDA1C9000F4FFD1 /* AccountSummaryViewController.swift in Sources */,
 				EBD696302CCEEB5000F4FFD1 /* AppDelegate.swift in Sources */,
+				EBB2A48B2D22D4A800806633 /* AccountSummaryViewController+Networking.swift in Sources */,
 				EBD696492CD405D500F4FFD1 /* OnboardingContainerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

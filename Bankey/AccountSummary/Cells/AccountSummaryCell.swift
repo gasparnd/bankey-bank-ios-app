@@ -8,13 +8,13 @@
 import Foundation
 import UIKit
 
+enum AccountType: String, Codable {
+    case Banking
+    case CreditCard
+    case Investment
+}
+
 class AccountSummaryCell: UITableViewCell {
-    
-    enum AccountType: String {
-        case Banking
-        case CreditCard
-        case Invesment
-    }
     
     struct ViewModel {
         let accountType: AccountType
@@ -150,7 +150,7 @@ extension AccountSummaryCell {
         case .CreditCard:
             dividerView.backgroundColor = .orange
             break
-        case .Invesment:
+        case .Investment:
             dividerView.backgroundColor = .purple
             break
         }
